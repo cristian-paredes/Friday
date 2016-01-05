@@ -1,4 +1,11 @@
 import java.util.*;
+
+/**
+ * The primary code used as the "engine" for the Friday game.
+ * 
+ * @author Cristian Paredes 
+ * @version 1-5-16
+ */
 public class Card
 {
     private int totalLives;
@@ -8,25 +15,63 @@ public class Card
     private Deck hazardDeck;
     private Deck robinsonDeck;
     priavte Deck agingDeck;
+    /**
+     * Creates an object containing all of the information needed
+     * to create a custom Friday game.
+     * 
+     * @param totalLives The maximum number of lives in the game.
+     * @param livesLeft The lives available to the player.
+     * @param phase The game phase.
+     * @param pirateDeck An object which contains all of the Pirate Cards.
+     * @param hazardDeck An object which contains all of the Hazard Cards.
+     * @param robinsonCard An object which contains all of the Robinson Cards.
+     * @param agingDeck An object which contains all of the Aging Cards.
+     */
     public Game(int totalLives, int startLives, String pirateDeck,
     String challengeDeck,String robinsonCard, String agingDeck)
     {
-        
+
     }
-    public game(int level)
+
+    /**
+     * Creates a version of the game based on the preset levels
+     * listed in the Instruction Manual.
+     * 
+     * @param  level The level of difficulty. 
+     */
+    public Game(int level)
     {
-        
+
     }
+
+    /**
+     * Allows the game to be able to move cards around from one deck to another.
+     * 
+     * @param  Card   The card that will be moved.
+     * @param  from   The deck from which the card will be moved from.
+     * @param  to     The deck from which the card is moved to.
+     */
     public void moveCard(Card card, Deck from, Deck to)
     {
-        
+
     }
+
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     * @return phase Increases the phase of the game. 
+     */
     public int incrementGamePhase()
     {
-        
+
     }
+
+    /**
+     * Detects whether or not the player chooses to give up a challenge card.
+     * 
+     */
     public void challengeChoice()
     {
-        
+
     }
 }
