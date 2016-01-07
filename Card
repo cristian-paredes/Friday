@@ -1,1 +1,24 @@
-fufyjxjt7,yir8guotuot
+
+/**
+ * Holds all of the card classes
+ * 
+ * @author Josue Sanchez Hernandez
+ * @version 01/05/2016
+ */
+public class Card
+{
+    public String name;
+    
+    /**
+     * Creates the card object
+     */  
+    public void Card()
+    {
+    
+    }
+    /**
+     * Enables the special ability that each card has
+     */
+    public void enableAbility(){}
+    
+}
