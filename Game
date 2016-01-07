@@ -6,7 +6,7 @@ import java.util.*;
  * @author Cristian Paredes 
  * @version 1-5-16
  */
-public class Card
+public class Game
 {
     private int totalLives;
     private int livesLeft;
@@ -14,7 +14,7 @@ public class Card
     private Deck pirateDeck;
     private Deck hazardDeck;
     private Deck robinsonDeck;
-    priavte Deck agingDeck;
+    private Deck agingDeck;
     /**
      * Creates an object containing all of the information needed
      * to create a custom Friday game.
@@ -47,7 +47,7 @@ public class Card
     /**
      * Allows the game to be able to move cards around from one deck to another.
      * 
-     * @param  Card   The card that will be moved.
+     * @param  card   The card that will be moved.
      * @param  from   The deck from which the card will be moved from.
      * @param  to     The deck from which the card is moved to.
      */
