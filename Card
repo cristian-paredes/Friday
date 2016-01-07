@@ -3,7 +3,7 @@
  * Holds all of the card classes
  * 
  * @author Josue Sanchez Hernandez
- * @version 01/05/2016
+ * @version 01/07/2016
  */
 public class Card
 {
