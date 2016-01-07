@@ -1,33 +1,44 @@
 import java.util.*;
-public class Deck
+public class Card
 {
-    private int totalLives;
-    private int livesLeft;
-    private int phase;
-    private Deck pirateDeck;
-    private Deck hazardDeck;
-    private Deck robinsonDeck;
-    priavte Deck agingDeck;
-    public Game(int totalLives, int startLives, String pirateDeck,
-    String challengeDeck,String robinsonCard, String agingDeck)
+    private int topCard;
+    private int cardsLeft;
+   public ArrayList<Deck> ;
+    
+    public void playCard(Card card, Deck from, Deck to)
     {
         
     }
-    public game(int level)
+public void addCard(Card card, Deck from, Deck to)
     {
         
     }
-    public void moveCard(Card card, Deck from, Deck to)
+public void removeCard(Card card, Deck from, Deck to)
     {
         
     }
-    public int incrementGamePhase()
+
+public int getCardPosition()
     {
         
     }
-    public void challengeChoice()
+    public int searchCardPosition()
     {
         
     }
+public void restoreCard()
+    {
+        
+    }
+public void Discard(Card card, Deck from, Deck to)
+    {
+        
+    }
+public void shuffleCard(Card card, Deck from, Deck to)
+    {
+        
+    }
+
 }
+
 
