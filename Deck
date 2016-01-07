@@ -1,1 +1,33 @@
+import java.util.*;
+public class Deck
+{
+    private int totalLives;
+    private int livesLeft;
+    private int phase;
+    private Deck pirateDeck;
+    private Deck hazardDeck;
+    private Deck robinsonDeck;
+    priavte Deck agingDeck;
+    public Game(int totalLives, int startLives, String pirateDeck,
+    String challengeDeck,String robinsonCard, String agingDeck)
+    {
+        
+    }
+    public game(int level)
+    {
+        
+    }
+    public void moveCard(Card card, Deck from, Deck to)
+    {
+        
+    }
+    public int incrementGamePhase()
+    {
+        
+    }
+    public void challengeChoice()
+    {
+        
+    }
+}
 
