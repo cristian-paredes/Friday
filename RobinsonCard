@@ -1,0 +1,34 @@
+/** 
+  * Displays all of the information for the RobinsonCard. 
+  *
+  * @author Keianna Wells 
+  * @version 01/07/2016
+  */
+public class Hazard 
+{
+   private String name; 
+   private int fightingVal; 
+   private int lifeCost; 
+   private String ability; 
+   /** 
+     * Creates a Robinson card with all of the necessary attributes. 
+     * 
+     * @param name The title of the card. 
+     * @param fightingVal The number of pts you receive to win. 
+     * @param lifeCost The number of life pts you'll have to pay to destroy a card. 
+     * @param ability The name of the possilbe ability you'll receive. 
+    */ 
+     
+   public Hazard(String name, int fightingVal, int lifeCost, String ability)
+   {
+     // Awesome Code ^_^ < Bunny Ears :) 
+   } 
+   
+   /** 
+    * Enables the ability of the hazard card. 
+    */
+   public void enableAbility()
+   {
+     // Awesome Code ^_^ < Bunny Ears :) 
+   }
+}
