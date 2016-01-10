@@ -1,0 +1,34 @@
+/** 
+  * Displays all of the information for the AgingCard.
+  *
+  * @author Keianna Wells.
+  * @verison 01/07/2016. 
+  */ 
+public class AgingCard 
+{
+   private String name;
+   private int fightingVal;
+   private int lifeCost;
+   private String ability;
+   private Boolean isDifficult; 
+   /** 
+     * Creates a Robinson card with all of the necessary attributes. 
+     * 
+     * @param name The title of the card. 
+     * @param fightingVal The number of pts you receive to win. 
+     * @param lifeCost The number of life pts you'll have to pay to destroy a card. 
+     * @param ability The name of the possilbe ability you'll receive. 
+     * @param isDifficult To tell which aging card to put at the end of the deck. 
+    */ 
+  public AgingCard(String name, int fightingVal, int lifeCost, String ability, boolean isDifficult)
+  {
+    // Awesome Code ^-^ < Bunny Ears
+  }
+  /** 
+   * Enable the ability of the card that the player draws. 
+   */ 
+  public void enableAbility()
+  {
+    // Awesome Code ^-^ < Bunny Ears 
+  }
+}
