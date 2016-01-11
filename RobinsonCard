@@ -1,10 +1,10 @@
-/** 
+ RobinsonCard/** 
   * Displays all of the information for the RobinsonCard. 
   *
   * @author Keianna Wells 
   * @version 01/07/2016
   */
-public class Hazard 
+public class RobinsonCard 
 {
    private String name; 
    private int fightingVal; 
@@ -19,7 +19,7 @@ public class Hazard
      * @param ability The name of the possilbe ability you'll receive. 
     */ 
      
-   public Hazard(String name, int fightingVal, int lifeCost, String ability)
+   public RobinsonCard(String name, int fightingVal, int lifeCost, String ability)
    {
      // Awesome Code ^_^ < Bunny Ears :) 
    } 
