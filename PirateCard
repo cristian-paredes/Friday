@@ -2,12 +2,12 @@
 /**
  * Write a description of class PirateCard here.
  * 
- * @author (your name) 
+ * @author Josue Sanchez 
  * @version (a version number or a date)
  */
 public class PirateCard
 {
-   private Card card = new Card();
+   private Card card;
    
    public String name, ability;
    public int freeCards, hazVal;
