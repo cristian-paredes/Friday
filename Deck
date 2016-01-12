@@ -29,10 +29,9 @@ public class Deck
      * moves card from one type to another array.
      * 
      * @param card The maximum number of lives in the game.
-     * @param from
-     * @param to
+     *
      */
-    public void addCard(Card card, Deck from, Deck to)
+    public void addCard(Card card)
     {
 
     }
@@ -41,10 +40,9 @@ public class Deck
      * it moves cards from deck/array.
      * 
      * @param card The maximum number of lives in the game.
-     * @param from
-     * @param to
+    
      */
-    public void removeCard(Card card, Deck from, Deck to)
+    public void removeCard(Card card)
 
     {
 
@@ -84,10 +82,9 @@ public class Deck
      * it discards cards not in play
      * 
      * @param card The maximum number of lives in the game.
-     * @param from
-     * @param to
+     
      */
-    public void Discard(Card card, Deck from, Deck to)
+    public void Discard(Card card)
     {
 
     }
@@ -96,10 +93,9 @@ public class Deck
      * it shuffles deck
      * 
      * @param card The maximum number of lives in the game.
-     * @param from
-     * @param to
+    
      */
-    public void shuffleCard(Card card, Deck from, Deck to)
+    public void shuffleCard(Card card)
     {
 
         
