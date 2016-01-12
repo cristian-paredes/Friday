@@ -77,25 +77,13 @@ public class Deck
     {
 
     }
-
-    /**
-     * it discards cards not in play
-     * 
-     * @param card The maximum number of lives in the game.
-     
-     */
-    public void Discard(Card card)
-    {
-
-    }
     
     /**
      * it shuffles deck
      * 
-     * @param card The maximum number of lives in the game.
     
      */
-    public void shuffleCard(Card card)
+    public void shuffleCard()
     {
 
         
