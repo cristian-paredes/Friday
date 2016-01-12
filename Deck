@@ -53,17 +53,7 @@ public class Deck
      * 
      * 
      */
-    public int getCardPosition()
-    {
-
-    }
-
-    /**
-     * it allows you to look for a card in the deck.
-     * 
-     * 
-     */
-    public int searchCardPosition()
+    public int getCardPosition(Card card)
     {
 
     }
@@ -73,7 +63,7 @@ public class Deck
      * 
      * 
      */
-    public void restoreCard()
+    public void restoreCard(Card card)
     {
 
     }
