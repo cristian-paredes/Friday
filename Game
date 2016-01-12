@@ -68,10 +68,10 @@ public class Game
     }
 
     /**
-     * Detects whether or not the player chooses to give up a challenge card.
+     * Detects whether or not the player chooses to give up a hazard card.
      * 
      */
-    public void challengeChoice()
+    public boolean hazardChoice()
     {
 
     }
