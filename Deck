@@ -1,44 +1,148 @@
 import java.util.*;
+/** Description of Card
+ *It holds all the different types of cards and brings them together to interact
+ * @author Kevin Soto
+ * @version Jan 11, 2016.
+ */
+
 public class Card
 {
+    /** topCard it gets the number of the top card in a deck to be played*/
     private int topCard;
+
+    /** cardsLeft gets the number left in the challenge cards to move to next level */
     private int cardsLeft;
-   public ArrayList<Deck> ;
-    
+
+    /** Array deck holds the name of each card */
+    public ArrayList<Deck> deck;
+
+    /**
+     * gets topcard and plays is.
+     * 
+     * @param totalLives The maximum number of lives in the game.
+     * @param livesLeft The lives available to the player.
+     * @param phase The game phase.
+     * @param pirateDeck An object which contains all of the Pirate Cards.
+     * @param hazardDeck An object which contains all of the Hazard Cards.
+     * @param robinsonCard An object which contains all of the Robinson Cards.
+     * @param agingDeck An object which contains all of the Aging Cards.
+     */
     public void playCard(Card card, Deck from, Deck to)
     {
-        
-    }
-public void addCard(Card card, Deck from, Deck to)
-    {
-        
-    }
-public void removeCard(Card card, Deck from, Deck to)
-    {
-        
+
     }
 
-public int getCardPosition()
+    /**
+     * moves card from one type to another array.
+     * 
+     * @param totalLives The maximum number of lives in the game.
+     * @param livesLeft The lives available to the player.
+     * @param phase The game phase.
+     * @param pirateDeck An object which contains all of the Pirate Cards.
+     * @param hazardDeck An object which contains all of the Hazard Cards.
+     * @param robinsonCard An object which contains all of the Robinson Cards.
+     * @param agingDeck An object which contains all of the Aging Cards.
+     */
+    public void addCard(Card card, Deck from, Deck to)
     {
-        
+
     }
+
+    /**
+     * it moves cards from deck/array.
+     * 
+     * @param totalLives The maximum number of lives in the game.
+     * @param livesLeft The lives available to the player.
+     * @param phase The game phase.
+     * @param pirateDeck An object which contains all of the Pirate Cards.
+     * @param hazardDeck An object which contains all of the Hazard Cards.
+     * @param robinsonCard An object which contains all of the Robinson Cards.
+     * @param agingDeck An object which contains all of the Aging Cards.
+     */
+    public void removeCard(Card card, Deck from, Deck to)
+
+    {
+
+    }
+
+    /**
+     *it allows you to get a card from the array/deck.
+     * 
+     * @param totalLives The maximum number of lives in the game.
+     * @param livesLeft The lives available to the player.
+     * @param phase The game phase.
+     * @param pirateDeck An object which contains all of the Pirate Cards.
+     * @param hazardDeck An object which contains all of the Hazard Cards.
+     * @param robinsonCard An object which contains all of the Robinson Cards.
+     * @param agingDeck An object which contains all of the Aging Cards.
+     */
+    public int getCardPosition()
+    {
+
+    }
+
+    /**
+     * it allows you to look for a card in the deck.
+     * 
+     * @param totalLives The maximum number of lives in the game.
+     * @param livesLeft The lives available to the player.
+     * @param phase The game phase.
+     * @param pirateDeck An object which contains all of the Pirate Cards.
+     * @param hazardDeck An object which contains all of the Hazard Cards.
+     * @param robinsonCard An object which contains all of the Robinson Cards.
+     * @param agingDeck An object which contains all of the Aging Cards.
+     */
     public int searchCardPosition()
     {
-        
-    }
-public void restoreCard()
-    {
-        
-    }
-public void Discard(Card card, Deck from, Deck to)
-    {
-        
-    }
-public void shuffleCard(Card card, Deck from, Deck to)
-    {
-        
+
     }
 
+    /**
+     * it moves the card back to the deck.
+     * 
+     * @param totalLives The maximum number of lives in the game.
+     * @param livesLeft The lives available to the player.
+     * @param phase The game phase.
+     * @param pirateDeck An object which contains all of the Pirate Cards.
+     * @param hazardDeck An object which contains all of the Hazard Cards.
+     * @param robinsonCard An object which contains all of the Robinson Cards.
+     * @param agingDeck An object which contains all of the Aging Cards.
+     */
+    public void restoreCard()
+    {
+
+    }
+
+    /**
+     * it discards cards not in play
+     * @param totalLives The maximum number of lives in the game.
+     * @param livesLeft The lives available to the player.
+     * @param phase The game phase.
+     * @param pirateDeck An object which contains all of the Pirate Cards.
+     * @param hazardDeck An object which contains all of the Hazard Cards.
+     * @param robinsonCard An object which contains all of the Robinson Cards.
+     * @param agingDeck An object which contains all of the Aging Cards.
+     */
+    public void Discard(Card card, Deck from, Deck to)
+    {
+
+    }
+    
+    /**
+     * it shuffles deck
+     * 
+     * @param totalLives The maximum number of lives in the game.
+     * @param livesLeft The lives available to the player.
+     * @param phase The game phase.
+     * @param pirateDeck An object which contains all of the Pirate Cards.
+     * @param hazardDeck An object which contains all of the Hazard Cards.
+     * @param robinsonCard An object which contains all of the Robinson Cards.
+     * @param agingDeck An object which contains all of the Aging Cards.
+     */
+    public void shuffleCard(Card card, Deck from, Deck to)
+    {
+
+        
+    }
 }
-
 
