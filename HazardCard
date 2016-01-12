@@ -1,21 +1,30 @@
-/** Description of HazardCard
-* @author Noah 
-* @version 
-*/
-Public Class HazardCard
-{
-     private String name;
-     private int freeCards;
-     private int hazVal;
-     private Card knowledgeCard;
-     private Card RobinsonCard;
-/** Description of HazardCard */
-Public HazardCard(String name, int freeCards, int hazVal, RobisonCard knowledgeCard)
-{
+/** A card that poses a hazard for Robinson such as cannibals or wild animals.
+ *
+ * @author Noah Schnur
+ * @version Jan. 12, 2016 
+ */
+public class HazardCard
+{    
+    private String name;
+    private int freeCards;
+    private int hazVal;
+    private card knowledgeCard;
+    private card RobinsonCard;
+    /** The challenges faced by Robinson. 
+     * @param name                Title of each card
+     * @param freeCards           Free cards given
+     * @param hazVal              Value of hazard cards
+     * @param RobinsonCard        Robinson cards
+     * @param knowledgeCard       Bottom part of hazard card
+     */
+    public HazardCard(String name, int freeCards, int hazVal, RobisonCard knowledgeCard)
+    {
 
+    }
+
+    /** The action of using an ability of a card */
+    public void enableAbility()
+    {
+
+    } 
 }
-/** Description of enableAbility */
-Public void enableAbility()
-{
-
-} 
