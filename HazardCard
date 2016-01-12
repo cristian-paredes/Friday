@@ -13,7 +13,6 @@ public class HazardCard
      * @param name                Title of each card
      * @param freeCards           Free cards given
      * @param hazVal              Value of hazard cards
-     * @param RobinsonCard        Robinson cards
      * @param knowledgeCard       Bottom part of hazard card
      */
     public HazardCard(String name, int freeCards, int hazVal, RobisonCard knowledgeCard)
