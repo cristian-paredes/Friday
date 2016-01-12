@@ -8,8 +8,7 @@ public class HazardCard
     private String name;
     private int freeCards;
     private int hazVal;
-    private card knowledgeCard;
-    private card RobinsonCard;
+    private Robinsoncard knowledgeCard;
     /** The challenges faced by Robinson. 
      * @param name                Title of each card
      * @param freeCards           Free cards given
