@@ -1,0 +1,7 @@
+Robinson Card:				
+Number of Cards	   Title 	               LifeCost 	Ability 	FightingVal 
+8	                   Weak                       1   …	          0
+1                 	 Eating	                    1	  +2 life	    0
+3	                   Focused	                  1	  …	          1
+1	                    Genius	                  1  	…	          2
+5	                 Distracted	                  1	  …	         -1
