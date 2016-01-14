@@ -1,0 +1,11 @@
+Hazard Value	Number of free cards	Special Ability
+No Value	    5	                    NA
+No Value	    No Value	            add up red value of all the remaining hazard cards and add up all the free card value. It will determine the hazard card value and the free card value
+16	          7			                2 life points per extra Fight card
+20	          6			                NA
+22	          9			                You can only use half of your face-up cards
+25	          7			                NA
+30	          8			                NA
+35	          9			                NA
+40	          10			              NA
+52	          10			              add one +1 to every card with a fighting value
