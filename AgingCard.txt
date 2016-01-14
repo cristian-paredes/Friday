@@ -1,0 +1,12 @@
+Aging Card:				
+Number of Cards          	Title	        LifeCost	    Ability	     FightingVal
+2	                        scared	          2	     Highest Card = 0	        0
+1	                      very tired	        2	         stop               	0
+1	                      very hungry	        2	       -2 life              	0
+1	                        hungry	          2	       -1 life	              0
+1	                      distracted         	2	          …	                 -1
+2                         stupid	          2	          …	                 -2
+1	                      very stupid	        2	          …	                 -3
+1                       	moronic	          2	          …	                 -4
+1	                       suicidal	          2	          …	                 -5
+
