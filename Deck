@@ -28,7 +28,7 @@ public class Deck
     /**
      * moves card from one type to another array.
      * 
-     * @param card The maximum number of lives in the game.
+     * @param card The card rthat will be moved.
      *
      */
     public void addCard(Card card)
@@ -39,7 +39,7 @@ public class Deck
     /**
      * it moves cards from deck/array.
      * 
-     * @param card The maximum number of lives in the game.
+     * @param card The card that will be moved.
     
      */
     public void removeCard(Card card)
