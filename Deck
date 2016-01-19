@@ -80,3 +80,43 @@ public class Deck
     }
 }
 
+/*Use this code as the basis for the Deck class
+import java.io.*;
+import java.util.*;
+
+public class Deck
+{
+    ArrayList<Card> deck;
+    String file;
+    public Deck(String file)
+    {
+        this.file = file;//This string holds the data in the text file
+        deck = new ArrayList<Card>();//Used to hold each line for use in the Peg class
+        Scanner scanner;//Initializing the data type before being used in a loop can save some time
+        String line;
+        try//used to grab data from a text file
+        {
+            scanner = new Scanner(new File(file));//To take data from the text file, you need to use it in the Scanner class
+            while(scanner.hasNextLine())//while there is data in the current line in the text
+            {
+                line = scanner.nextLine();//grab the data in the line
+                deck.add(new Card(line));//store the data for use in the Peg class
+            }
+            scanner.close();//Once you are done using the file, use this to avoid errors
+        }
+        catch(FileNotFoundException e)//If the board catches any error when retrieving a file, do this
+        {
+            System.out.println("PNF-404");
+        }
+    }
+    public String toString()
+    {
+        String str = "";
+        for(Card card: deck)
+        {
+            System.out.println(card);
+        }
+        return str;
+    }
+}
+*/
