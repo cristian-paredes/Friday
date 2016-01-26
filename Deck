@@ -1,88 +1,10 @@
 import java.util.*;
+import java.io.*;
 /** Description of Card
  *It holds all the different types of cards and brings them together to interact
  * @author Kevin Soto
  * @version Jan 11, 2016.
  */
-
-public class Deck
-{
-    /** topCard it gets the number of the top card in a deck to be played*/
-    private int topCard;
-
-    /** cardsLeft gets the number left in the challenge cards to move to next level */
-    private int cardsLeft;
-
-    /** Array deck holds the name of each card */
-    public ArrayList<Deck> deck;
-
-    /**
-     * gets topcard and plays is.
-     *
-     */
-    public void playCard(Card card, Deck from, Deck to)
-    {
-
-    }
-
-    /**
-     * moves card from one type to another array.
-     * 
-     * @param card The card rthat will be moved.
-     *
-     */
-    public void addCard(Card card)
-    {
-
-    }
-
-    /**
-     * it moves cards from deck/array.
-     * 
-     * @param card The card that will be moved.
-    
-     */
-    public void removeCard(Card card)
-
-    {
-
-    }
-
-    /**
-     *it allows you to get a card from the array/deck.
-     * 
-     * 
-     */
-    public int getCardPosition(Card card)
-    {
-
-    }
-
-    /**
-     * it moves the card back to the deck.
-     * 
-     * 
-     */
-    public void restoreCard(Card card)
-    {
-
-    }
-    
-    /**
-     * it shuffles deck
-     * 
-    
-     */
-    public void shuffleCard()
-    {
-
-        
-    }
-}
-
-/*Use this code as the basis for the Deck class
-import java.io.*;
-import java.util.*;
 
 public class Deck
 {
@@ -108,15 +30,117 @@ public class Deck
         {
             System.out.println("PNF-404");
         }
+        {
+        
+        
+        }
     }
+    
     public String toString()
     {
         String str = "";
         for(Card card: deck)
         {
-            System.out.println(card);
+            str += card += "/n";
         }
         return str;
     }
+   
+    
+    /** topCard it gets the number of the top card in a deck to be played*/
+    private int topCard;
+
+    /** cardsLeft gets the number left in the challenge cards to move to next level */
+    private int cardsLeft;
+
+    /** Array deck holds the name of each card */
+    public ArrayList<Deck> deck;
+
+    /**
+     * gets topcard and plays is.
+     *
+     */
+    public void playCard(Card card, Deck from, Deck to)
+    {
+
+    }
+
+    /**
+     * moves card from one type to another array.
+     * 
+     * @param card The maximum number of lives in the game.
+     *
+     */
+    public void addCard(Card card)
+    {
+
+    }
+
+    /**
+     * it moves cards from deck/array.
+     * 
+     * @param card The maximum number of lives in the game.
+    
+     */
+    public void removeCard(Card card)
+
+    {
+
+    }
+
+    /**
+     *it allows you to get a card from the array/deck.
+     * 
+     *  @param card The maximum number of lives in the game.
+     */
+    public int getCardPosition(Card card)
+    {
+
+    }
+
+    /**
+     * it moves the card back to the deck.
+     * 
+     *  @param card The maximum number of lives in the game.
+     * 
+     */
+    public void restoreCard(Card card)
+    {
+
+    }
+    public Card randomCard()
+    {
+        int w = randomPosition();
+        deck.get(w);
+           
+       
+    }
+    /**
+     * it shuffles deck
+     * 
+    
+     */
+    public void shuffleCard()
+    {
+        ArrayList<Card> tempDeck;
+        tempDeck = new ArrayList<Card>();
+        
+        
+       
+        while(deck.size() >0){
+            int n = randomPosition();
+           
+            tempDeck.add(deck.remove(n));
+        }
+        deck = tempDeck;
+        
+    }
+    
+    private int randomPosition()
+    {
+        return Math.random()*deck.size();
+    }
+    
+   
 }
-*/
+
