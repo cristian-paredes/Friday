@@ -30,10 +30,6 @@ public class Deck
         {
             System.out.println("PNF-404");
         }
-        {
-        
-        
-        }
     }
     
     public String toString()
@@ -71,8 +67,9 @@ public class Deck
      * @param card The maximum number of lives in the game.
      *
      */
-    public void addCard(Card card)
+    public Card addCard()
     {
+     deck.add(deck.size(),C);
 
     }
 
@@ -82,9 +79,10 @@ public class Deck
      * @param card The maximum number of lives in the game.
     
      */
-    public void removeCard(Card card)
+    public Card removeCard()
 
     {
+        deck.remove(v);
 
     }
 
@@ -141,6 +139,11 @@ public class Deck
         return Math.random()*deck.size();
     }
     
+    public Card getCard(int index)
+    {
+        return deck.get(index);
+    
+    }
    
 }
 
