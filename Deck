@@ -3,6 +3,7 @@ import java.io.*;
 /** Description of Card
  *It holds all the different types of cards and brings them together to interact
  * @author Kevin Soto
+ * @author Noah Schnur
  * @version Jan 11, 2016.
  */
 
