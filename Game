@@ -15,9 +15,15 @@ public class Game
     private Deck hazardDeck;
     private Deck robinsonDeck;
     private Deck agingDeck;
+    private Deck rightHandSide;
+    private Deck leftHandSide;
+    private Deck discard;
+    private Deck sortThreeDeck;
     /**
      * Creates an object containing all of the information needed
-     * to create a custom Friday game.
+     * to create a custom Friday game. The String objects represent
+     * the original text databases for the cards.
+     * 
      * 
      * @param totalLives The maximum number of lives in the game.
      * @param livesLeft The lives available to the player.
@@ -27,10 +33,15 @@ public class Game
      * @param robinsonCard An object which contains all of the Robinson Cards.
      * @param agingDeck An object which contains all of the Aging Cards.
      */
-    public Game(int totalLives, int startLives, String pirateDeck,
-    String challengeDeck,String robinsonCard, String agingDeck)
+    public Game(int totalLives, int startLives, String pirateCards,
+    String hazardCards,String robinsonCards, String agingCards)
     {
-
+        this.totalLives = totalLives;
+        livesLeft = startLives;
+        pirateDeck = new Deck(pirateCards);
+        hazardDeck = new Deck(hazardCards);
+        robinsonDeck = new Deck(robinsonCards);
+        agingDeck = new Deck(agingCards);
     }
 
     /**
@@ -41,7 +52,24 @@ public class Game
      */
     public Game(int level)
     {
-
+        this(22,20,"PirateCards.txt","HazardCards.txt","RobinsonCards.txt",
+            "AgingCards.txt");
+        switch(level)
+        {
+            case 1: agingDeck.removeCard(veryStupid);
+                    break;
+            case 2: agingDeck.removeCard(veryStupid);
+                    moveCard(agingDeck.randomCard(), agingDeck, robinsonDeck);
+                    break;
+            case 3: moveCard(agingDeck.randomCard(), agingDeck, robinsonDeck);
+                    moveCard(agingDeck.randomCard(), agingDeck, robinsonDeck);
+                    break;
+            case 4: this(3);
+                    totalLives = 18;
+                    livesLeft = 20;
+                    break;
+            default: System.out.println("Invalid Level!");
+        }
     }
 
     /**
@@ -53,26 +81,70 @@ public class Game
      */
     public void moveCard(Card card, Deck from, Deck to)
     {
-
+        if(from.getCardPosition(card) != -1)
+            to.add(from.remove(i));
+    }
+    
+    /**
+     * Allows the game to be able to move the card on top of one deck to the other deck.
+     * 
+     * @param  card   The card that will be moved.
+     * @param  from   The deck from which the card will be moved from.
+     * @param  to     The deck from which the card is moved to.
+     */
+    public void moveCard(Deck from, Deck to)
+    {
+        to.add(from.removeCard(0));
     }
 
     /**
      * Increments the phase of the game once there are no more Hazard Cards in the deck.
      * Useful for initiating the pirate phase.
-     * 
-     * @return phase Increases the phase of the game. 
+     *  
      */
-    public int incrementGamePhase()
+    public void incrementGamePhase()
     {
+        if(phase < 3)
+        {
+            for(int i = 0; i < discard.getSize();i++)
+            {
+                moveCard(discard,hazardDeck);
+            }
+            discard.shuffleDeck();
+        }
+        else
+        {
+            pirateDeck.randomCard();
+        }
+        phase++;
+    }
 
+    /**
+     * Return the game phase. Used for the hazard cards.
+     * 
+     * @return phase The game phase.
+     */
+    public void getGamePhase()
+    {
+        return phase;
     }
 
     /**
      * Detects whether or not the player chooses to give up a hazard card.
      * 
      */
-    public boolean hazardChoice()
+    public void hazardLose()
     {
+        
+    }
 
+    public String toString()
+    {
+        String str = "";
+        //System.out.println(robinsonDeck);
+        System.out.println(hazardDeck);
+        //System.out.println(agingDeck);
+        //System.out.println(pirateDeck);
+        return str;
     }
 }
