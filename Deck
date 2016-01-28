@@ -52,14 +52,7 @@ public class Deck
     /** Array deck holds the name of each card */
     public ArrayList<Deck> deck;
 
-    /**
-     * gets topcard and plays is.
-     *
-     */
-    public void playCard(Card card, Deck from, Deck to)
-    {
-
-    }
+    
 
     /**
      * moves card from one type to another array.
@@ -67,9 +60,9 @@ public class Deck
      * @param card The maximum number of lives in the game.
      *
      */
-    public Card addCard()
+    public Card addCard(Card cardName)
     {
-     deck.add(deck.size(),C);
+     deck.add(cardName);
 
     }
 
@@ -79,10 +72,10 @@ public class Deck
      * @param card The maximum number of lives in the game.
     
      */
-    public Card removeCard()
+    public Card removeCard(Card cardName)
 
     {
-        deck.remove(v);
+        deck.remove(cardName);
 
     }
 
@@ -91,9 +84,9 @@ public class Deck
      * 
      *  @param card The maximum number of lives in the game.
      */
-    public int getCardPosition(Card card)
+    public int indexOf(Card cardName)
     {
-
+        deck.indexOf(cardName);
     }
 
     /**
@@ -104,12 +97,18 @@ public class Deck
      */
     public void restoreCard(Card card)
     {
-
+        
     }
     public Card randomCard()
     {
         int w = randomPosition();
         deck.get(w);
+           
+       
+    }
+    public int getSize()
+    {
+        return deck.size();
            
        
     }
