@@ -26,3 +26,51 @@ public class Card
         return fightValue;
     }
 }
+
+//Use the code below as the basis for the standard card class.
+/*import java.io.*;
+import java.util.*;
+
+public class Card
+{
+    ArrayList<Integer> phaseVals;
+    String title1;
+    int fightVal;
+    String specAct;
+    int lifePoints;
+    String title2;
+    int freeCards;
+    public Card(String line)
+    {
+        phaseVals = new ArrayList<Integer>();
+        Scanner scanner = new Scanner(line);//Take the line that is being fed from the Board class
+        int token;//Used as a holder for the numbers in the text file
+        title1 = scanner.next();//Grab the first cluster of data in the text line and use it as the peg number
+        fightVal = Integer.parseInt(scanner.next());
+        specAct = scanner.next();
+        lifePoints = Integer.parseInt(scanner.next());
+        title2 = scanner.next();
+        freeCards = Integer.parseInt(scanner.next());
+        while(scanner.hasNext())//while there is something to grab within the line
+        {
+            token = Integer.parseInt(scanner.next());//Grab the data and use it for the neighbors
+            //token += " ";
+            phaseVals.add(token);//Add the data into the neighbors array list
+        }
+        scanner.close();
+    }
+    public String toString()
+    {
+        String str = "";
+        int counter = 0;
+        //str += String.format("%02d -",pegNum);
+        //str += String.format("%02d",pegNum);
+        for(int phaseVal: phaseVals)
+        {
+            System.out.print(title1 + " " + fightVal + " " + specAct + " " + lifePoints + " " + title2 + " " + freeCards);
+            str += String.format(" %02d", phaseVal);
+            //str += neighbor;
+        }
+        return str;
+    }
+}*/
