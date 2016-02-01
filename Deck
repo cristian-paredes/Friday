@@ -90,16 +90,7 @@ public class Deck
         deck.indexOf(cardName);
     }
 
-    /**
-     * it moves the card back to the deck.
-     * 
-     *  @param card The maximum number of lives in the game.
-     * 
-     */
-    public void restoreCard(Card card)
-    {
-        
-    }
+   
     public Card randomCard()
     {
         int w = randomPosition();
