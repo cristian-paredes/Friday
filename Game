@@ -4,7 +4,7 @@ import java.util.*;
  * The primary code used as the "engine" for the Friday game.
  * 
  * @author Cristian Paredes 
- * @version 1-5-16
+ * @version 1-28-16
  */
 public class Game
 {
@@ -15,8 +15,8 @@ public class Game
     private Deck hazardDeck;
     private Deck robinsonDeck;
     private Deck agingDeck;
-    private Deck rightHandSide;
-    private Deck leftHandSide;
+    private Deck rightHandSide; //for all other cards
+    private Deck leftHandSide; //for the free cards
     private Deck discard;
     private Deck sortThreeDeck;
     /**
@@ -118,6 +118,14 @@ public class Game
         }
         phase++;
     }
+    
+    /**
+     * Input is needed for this code.
+     */
+    public void sortDeck(Deck deck)
+    {
+        
+    }
 
     /**
      * Return the game phase. Used for the hazard cards.
@@ -128,6 +136,26 @@ public class Game
     {
         return phase;
     }
+    
+    /**
+     * Returns the number of lives in the current game session;
+     * 
+     * @return livesLeft The number of lives left in the game session;
+     */
+    public int getLivesLeft()
+    {
+        return livesLeft;
+    }
+    
+    /**
+     * Sets the number of lives left to a new value.
+     * 
+     * @param lives The number of lives you want to game to have.
+     */
+    public void setLivesLeft(int lives)
+    {
+        livesLeft = lives;
+    }
 
     /**
      * Detects whether or not the player chooses to give up a hazard card.
@@ -135,7 +163,16 @@ public class Game
      */
     public void hazardLose()
     {
-        
+        int totalFightVals = 0;
+        for(int i = 0; i < leftHandSide.getSize();i++)
+        {
+            totalFightVals += leftHandSide.getCard(i).getFightVal();
+        }
+        for(int j = 0; j < rightHandSide.getSize();j++)
+        {
+            totalFightVals += rightHandSide.getCard(j).getFightVal();
+        }
+        setLivesLeft(getLivesLeft() - totalFightVals);
     }
 
     public String toString()
