@@ -4,7 +4,8 @@ import java.util.*;
  * The primary code used as the "engine" for the Friday game.
  * 
  * @author Cristian Paredes 
- * @version 1-28-16
+ * @author Josue Sanchez Hernandez
+ * @version 2-04-16
  */
 public class Game
 {
@@ -183,5 +184,19 @@ public class Game
         //System.out.println(agingDeck);
         //System.out.println(pirateDeck);
         return str;
+    }
+    
+    /**
+     * Is the implementation of the Sort Three attribute
+     */
+    public void sortThree(){
+        int n= Game.getInput("How many cards do you wish to sort (1, 2, or 3)?", 1, 3);
+        for (int i=0; i<n;i++)
+            moveCard(deck1, deck2);
+        while(Game.getSize()>1){
+            int n= Game.getInput("Which card do you wish to put on top of the deck?", 1, deck2.getSize());
+            Game.moveCard(n-1, deck2, deck1);
+        }
+        Game.moveCard(n-1, deck2, deck1);
     }
 }
