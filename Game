@@ -199,4 +199,37 @@ public class Game
         }
         Game.moveCard(n-1, deck2, deck1);
     }
+    
+    public int doubleFightingVal()
+    {
+      return fightingVal * 2;
+    }
+    
+    public void changeLifeInt(int value)
+    {
+      totalLives += value;
+    }
+    
+    public void minusLife(int value)
+    {
+      totalLives -= value;
+    }
+    
+    public int stop()
+    {
+      return freeCards = 0;
+    }
+    
+    public int minusPhase() 
+    {
+      if(phase != 1)
+       {
+         return phase -= 1;
+       }
+    }
+    
+    public void destroy(Card fightingCard)
+    {
+      robinsonDeck.remove(fightingCard);
+    }
 }
