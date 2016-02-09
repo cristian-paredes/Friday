@@ -34,12 +34,12 @@ import java.util.*;
 public class Card
 {
     ArrayList<Integer> phaseVals;
-    String title1;
-    int fightVal;
-    String specAct;
-    int lifePoints;
-    String title2;
-    int freeCards;
+    private String title1;
+    private int fightVal;
+    private String specAct;
+    private int lifePoints;
+    private String title2;
+    private int freeCards;
     public Card(String line)
     {
         phaseVals = new ArrayList<Integer>();
