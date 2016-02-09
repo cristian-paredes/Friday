@@ -1,6 +1,7 @@
 /** A card that poses a hazard for Robinson such as cannibals or wild animals.
  *
  * @author Noah Schnur
+ * @author Cristian Paredes
  * @version Jan. 12, 2016 
  */
 public class HazardCard
@@ -10,14 +11,32 @@ public class HazardCard
     private int hazVal;
     private Robinsoncard knowledgeCard;
     /** The challenges faced by Robinson. 
-     * @param name                Title of each card
-     * @param freeCards           Free cards given
-     * @param hazVal              Value of hazard cards
-     * @param knowledgeCard       Bottom part of hazard card
+     * @param name                The individual line in the "database" text file.
      */
-    public HazardCard(String name, int freeCards, int hazVal, RobisonCard knowledgeCard)
+    public HazardCard(String line)
     {
-
+        String knowledgeName = "";
+        int kFightingVal = 0;
+        int kLifeCost = 0;
+        String knowledgeAbility = "";
+        //phaseVals = new ArrayList<Integer>();
+        Scanner scanner = new Scanner(line);//Take the line that is being fed from the Board class
+        int token;//Used as a holder for the numbers in the text file
+        int cardNums = Integer.parseInt(scanner.next());
+        knowledgeName = scanner.next();//Grab the first cluster of data in the text line and use it as the peg number
+        kFightingVal = Integer.parseInt(scanner.next());
+        knowledgeAbility = scanner.next();
+        kLifeCost = Integer.parseInt(scanner.next());
+        name = scanner.next();
+        freeCards = Integer.parseInt(scanner.next());
+        while(scanner.hasNext())//while there is something to grab within the line
+        {
+            token = Integer.parseInt(scanner.next());//Grab the data and use it for the neighbors
+            //token += " ";
+            phaseVals.add(token);//Add the data into the neighbors array list
+        }
+        knowledgeCard = new Card(knowledgeName, kFightingVal, kLifeCost, knowledgeAbility);
+        scanner.close();
     }
 
     /** The action of using an ability of a card */
