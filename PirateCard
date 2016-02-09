@@ -7,19 +7,19 @@
  */
 public class PirateCard
 {
-   private Card card;
    
-   public String name, ability;
-   public int freeCards, hazVal;
+   private String name, ability;
+   private int freeCards, hazVal;
    /**
     * Creates a pirate card with all of the necessary attributes
     * 
+    * @param name of the card
     * @param freeCards number of cards allowed to draw without spending life points
     * @param hazVal the value of attack points that must be met to defeat the card
     * @param ability the special ability that the player must activate
    */
    
-   public PirateCard(int freeCards, int hazVal, String ability){
+   public PirateCard(int freeCards, int hazVal, String ability. String name){
        
     }
    
