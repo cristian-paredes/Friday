@@ -11,7 +11,7 @@ public class HazardCard
     private int hazVal;
     private Robinsoncard knowledgeCard;
     /** The challenges faced by Robinson. 
-     * @param name                The individual line in the "database" text file.
+     * @param line                The individual line in the "database" text file.
      */
     public HazardCard(String line)
     {
